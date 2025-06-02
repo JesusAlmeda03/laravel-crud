@@ -8,9 +8,9 @@ Route::get('/', [HomeController::class, 'index']);
 
 
 //Controlador para los posts
-Route::get('/post',         [PostController::class, 'index']);
-Route::get('/post/create',  [PostController::class, 'create']);   
-Route::get('/post/show',    [PostController::class, 'show']);   
+Route::get('/post',             [PostController::class, 'index']);
+Route::get('/post/create',      [PostController::class, 'create']);
+Route::get('/post/show/{id}',   [PostController::class, 'show']);
 
 
 // Route::get('/mensaje/{post}/{catgory?}', function($post, $category = null){
@@ -20,5 +20,5 @@ Route::get('/post/show',    [PostController::class, 'show']);
 //         return $resultado;
 //     }else{
 //         return "No tiene valor";
-//     } 
+//     }
 //});

@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        return "Welcome";
+        return view('posts.index');
     }
 
     public function post(){
-        return "Controlador para el post";
+        return view('home');
     }
 }

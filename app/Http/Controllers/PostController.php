@@ -14,7 +14,8 @@ class PostController extends Controller
         return "Formulario para crear un post";
     }
 
-    public function show(){
-        return "Listado de los mensajes";
+    public function show($post){
+
+        return view('posts.show',compact('post'));
     }
 }
